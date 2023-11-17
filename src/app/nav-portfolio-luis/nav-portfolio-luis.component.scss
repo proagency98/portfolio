@@ -1,0 +1,50 @@
+nav{
+    border: 1px solid red;
+    width: 100%;
+    ul{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        border: 1px solid red;
+        padding: 0;
+        justify-content: space-between;
+        li{
+            list-style-type: none;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    }
+}
+
+@media (max-width: 301px) {
+    .nav-luis__boton-desplegable{
+        display: none;
+    }
+}
+
+@media (min-width: 300px) {
+    nav{
+        border: 1px solid blue;
+        width: 100%;
+        
+        .nav--luis__lista-desplegable{
+            gap: 20px;
+            li:hover{
+                background-color: aquamarine;
+                border-radius: 8px;
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .nav-luis__boton-desplegable{
+        display: none;
+    }
+}
