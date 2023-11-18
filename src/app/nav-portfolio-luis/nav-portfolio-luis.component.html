@@ -1,15 +1,26 @@
-    <nav role="menu">
-        <ul>
-            <li><a href="#">Luis Logo</a></li>
-            <li class="nav-luis__boton-desplegable">
-                <ul class="nav--luis__lista-desplegable">
-                    <li><a href="">INICIO</a></li>
-                    <li><a href="#">SOBRE MI</a></li>
-                    <li><a href="#">SERVICIOS</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+
+
+    <header class="header">
+        <div class="logo">Menu</div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><img class="menu" src="assets/nav-portfolio/nav-menu.svg" alt="menu"></label>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a>
+                <ul>
+                    <li><a href="#">Marketing Digital</a></li>
+                    <li><a href="#">Diseño Web</a></li>
+                    <li><a href="#">Estrategia SEO / SEM</a>
+                        <ul>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">SEM</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-                
-        </ul>
-    </nav>
+                </li>
+                <li><a href="#">Sobre Mi</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
