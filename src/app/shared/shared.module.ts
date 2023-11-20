@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import * as fromComponents from './components';
 import { TitleH2Component } from './components/titles/title-h2/title-h2.component';
 import { CardUserComponent } from './components/cards/card-user/card-user.component';
+import { RouterLink, RouterModule } from '@angular/router';
 
 
 
@@ -13,14 +14,16 @@ import { CardUserComponent } from './components/cards/card-user/card-user.compon
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  declarations: [...fromComponents.component, TitleH2Component, CardUserComponent],
+  declarations: [...fromComponents.component, CardUserComponent],
   exports:[
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     CommonModule,
+    RouterModule,
     ...fromComponents.component
   ]
   
