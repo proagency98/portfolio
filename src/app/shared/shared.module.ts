@@ -4,7 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import * as fromComponents from './components';
-import { TitleH2Component } from './title-h2/title-h2.component';
+import { TitleH2Component } from './components/titles/title-h2/title-h2.component';
+import { CardUserComponent } from './components/cards/card-user/card-user.component';
 
 
 
@@ -14,7 +15,7 @@ import { TitleH2Component } from './title-h2/title-h2.component';
     HttpClientModule,
     CommonModule
   ],
-  declarations: [...fromComponents.component, TitleH2Component],
+  declarations: [...fromComponents.component, TitleH2Component, CardUserComponent],
   exports:[
     FormsModule,
     ReactiveFormsModule,
