@@ -9,7 +9,11 @@ const routes: Routes = [
     children: [
       {
         path:'',
-        loadChildren: () => import('@modules/bio/bio.module').then((m) => m.BioModule)
+        loadChildren: () => import('@modules/bio/bio-detail/bio.module').then((m) => m.BioModule)
+      },
+      {
+        path:'',
+        loadChildren: () => import('@modules/card-identity/card-identity.module').then((m) => m.CardIdentityModule)
       }
     ]
     

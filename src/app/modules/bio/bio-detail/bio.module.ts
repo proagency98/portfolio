@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
-import { BioRoutingModule } from './bio-routing.module';
-import { BioDetailComponent } from './bio-detail/bio-detail.component';
+import {  BiografiaRoutingModule } from './bio-routing.module';
+import { BioDetailComponent } from './bio-detail.component';
 import { BandaPrincipalComponent } from '@app/shared/components/banda-principal/banda-principal.component';
 
 
@@ -14,7 +14,7 @@ import { BandaPrincipalComponent } from '@app/shared/components/banda-principal/
   ],
   imports: [
     SharedModule,
-    BioRoutingModule
+    BiografiaRoutingModule
     
   ]
 })
