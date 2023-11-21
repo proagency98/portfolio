@@ -5,8 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import * as fromComponents from './components';
 import { RouterModule } from '@angular/router';
-import { UserListComponent } from '@app/modules/user/user-list/user-list.component';
-import { BandaPrincipalComponent } from './components/banda-principal/banda-principal.component';
 
 
 
@@ -18,7 +16,7 @@ import { BandaPrincipalComponent } from './components/banda-principal/banda-prin
     CommonModule,
     RouterModule
   ],
-  declarations: [...fromComponents.component],
+  declarations: [...fromComponents.component, ],
   exports:[
     FormsModule,
     ReactiveFormsModule,
