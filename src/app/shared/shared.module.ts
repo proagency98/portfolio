@@ -4,10 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import * as fromComponents from './components';
-import { TitleH2Component } from './components/titles/title-h2/title-h2.component';
-import { CardUserComponent } from './components/cards/card-user/card-user.component';
-import { RouterLink, RouterModule } from '@angular/router';
-import { BioPortfolioLuisComponent } from './components/bio-portfolio-luis/bio-portfolio-luis.component';
+import { RouterModule } from '@angular/router';
+import { UserListComponent } from '@app/modules/user/user-list/user-list.component';
+import { BandaPrincipalComponent } from './components/banda-principal/banda-principal.component';
+
 
 
 
@@ -18,7 +18,7 @@ import { BioPortfolioLuisComponent } from './components/bio-portfolio-luis/bio-p
     CommonModule,
     RouterModule
   ],
-  declarations: [...fromComponents.component, CardUserComponent, BioPortfolioLuisComponent],
+  declarations: [...fromComponents.component],
   exports:[
     FormsModule,
     ReactiveFormsModule,

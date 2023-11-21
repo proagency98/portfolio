@@ -5,30 +5,14 @@ import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/panel/user',
-    pathMatch: 'full'
-  },
-  {
-    path: 'panel',
     component: SkeletonComponent,
     children: [
       {
-        path: 'user',
-        loadChildren: () => 
-        import('@modules/user/user.module').then((m) => m.UserModule)
-      },
-      {
-        path: '**',
-        redirectTo: '/panel/user',
-        pathMatch: 'full'
+        path:'',
+        loadChildren: () => import('@modules/bio/bio.module').then((m) => m.BioModule)
       }
     ]
     
-  },
-  {
-    path: '**',
-    redirectTo: '/panel/user',
-    pathMatch: 'full'
   }
 ];
 

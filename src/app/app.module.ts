@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BioPortfolioLuisComponent } from './bio-portfolio-luis/bio-portfolio-luis.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
@@ -20,11 +19,12 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     NavigationComponent
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [
     {

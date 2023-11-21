@@ -8,12 +8,12 @@ import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
-    UserDetailComponent,
-    UserListComponent
+    UserListComponent,
+    UserDetailComponent
   ],
   imports: [
-    SharedModule,
-    UserRoutingModule
+    UserRoutingModule,
+    SharedModule
   ]
 })
 export class UserModule { }
