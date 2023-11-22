@@ -6,6 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import * as fromComponents from './components';
 import { RouterModule } from '@angular/router';
 import { BotonCvComponent } from './components/boton-cv/boton-cv.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { BoxServicesComponent } from './components/box-services/box-services.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 
 
@@ -17,7 +21,7 @@ import { BotonCvComponent } from './components/boton-cv/boton-cv.component';
     CommonModule,
     RouterModule
   ],
-  declarations: [...fromComponents.component ],
+  declarations: [...fromComponents.component],
   exports:[
     FormsModule,
     ReactiveFormsModule,

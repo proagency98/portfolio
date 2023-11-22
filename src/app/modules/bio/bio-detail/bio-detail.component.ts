@@ -13,4 +13,7 @@ public user: IBandaBio = {
   profesion: 'Diseñador Digital',
   subtittle: 'Futuro Diseñador de Productos Graficos'
 }
+
+
+
 }
