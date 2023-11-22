@@ -10,10 +10,6 @@ const routes: Routes = [
       {
         path:'',
         loadChildren: () => import('@modules/bio/bio-detail/bio.module').then((m) => m.BioModule)
-      },
-      {
-        path:'init',
-        loadChildren: () => import('@modules/card-identity/card-identity.module').then((m) => m.CardIdentityModule)
       }
     ]
     

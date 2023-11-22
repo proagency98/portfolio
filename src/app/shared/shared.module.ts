@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import * as fromComponents from './components';
 import { RouterModule } from '@angular/router';
+import { BotonCvComponent } from './components/boton-cv/boton-cv.component';
 
 
 
