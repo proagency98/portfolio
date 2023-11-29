@@ -1,0 +1,21 @@
+.lc-bioportfolio-beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    h2{
+        font-size: 20px;
+        color: white;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+        color: rgb(198, 197, 197);
+    }
+}

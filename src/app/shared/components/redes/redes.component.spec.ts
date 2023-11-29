@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotonCvComponent } from './boton-cv.component';
+import { RedesComponent } from './redes.component';
 
-describe('BotonCvComponent', () => {
-  let component: BotonCvComponent;
-  let fixture: ComponentFixture<BotonCvComponent>;
+describe('RedesComponent', () => {
+  let component: RedesComponent;
+  let fixture: ComponentFixture<RedesComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BotonCvComponent]
+      declarations: [RedesComponent]
     });
-    fixture = TestBed.createComponent(BotonCvComponent);
+    fixture = TestBed.createComponent(RedesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

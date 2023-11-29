@@ -1,6 +1,4 @@
 import { Component, Output } from '@angular/core';
-import { IHabilidades } from '@app/interfaces/habilidades/ihabilidades';
-import { IProyectos } from '@app/interfaces/proyectos/iproyectos';
 
 @Component({
   selector: 'app-proyectos',
@@ -9,7 +7,5 @@ import { IProyectos } from '@app/interfaces/proyectos/iproyectos';
 })
 export class ProyectosComponent {
 
-@Output() data: IProyectos = {
-  title: 'Proyectos'
-}
+
 }
