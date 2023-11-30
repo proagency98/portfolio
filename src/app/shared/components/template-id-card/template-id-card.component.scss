@@ -34,9 +34,70 @@
         height: 90px;
     }
     h2{
+        font-size: 25px;
         color: #FFFFFF;
     }
     p{
+        font-size: 18px;
         color: #FFFFFF;
+    }
+}
+
+.contenedores-maxwidth-700px{
+    display: none;
+}
+
+@media (min-width:700px) {
+    .lc-porfolio-card,
+    .lc-porfolio-card2{
+        display: none;
+    }
+    .contenedores-maxwidth-700px{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 90px auto;
+        .container-html{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-image:url(/assets/img/fondo-html.png);
+            h2{
+                font-size: 40px;
+                color: #FFFFFF;
+            }
+        }
+        .container-css{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-image: url(/assets/img/fondo-css.png);
+            h2{
+                font-size: 40px;
+                color: #FFFFFF;
+            }
+        }
+        .container-angular{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-image: url(/assets/img/fondo-angular.png);
+            h2{
+                font-size: 40px;
+                color: #FFFFFF;
+            }
+        }
     }
 }

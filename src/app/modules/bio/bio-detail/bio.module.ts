@@ -4,7 +4,6 @@ import {  BiografiaRoutingModule } from './bio-routing.module';
 import { BioDetailComponent } from './bio-detail.component';
 import { BandaPrincipalComponent } from '@app/shared/components/banda-principal/banda-principal.component';
 import { TemplateIdCardComponent } from '@app/shared/components/template-id-card/template-id-card.component';
-import { ServiciosComponent } from '@app/shared/components/servicios/servicios.component';
 import { BoxServicesComponent } from '@app/shared/components/box-services/box-services.component';
 import { ProyectosComponent } from '@app/shared/components/proyectos/proyectos.component';
 import { HabilidadesComponent } from '@app/shared/components/habilidades/habilidades.component';
@@ -22,7 +21,6 @@ import { RedesComponent } from '@app/shared/components/redes/redes.component';
     BioDetailComponent,
     BandaPrincipalComponent,
     TemplateIdCardComponent,
-    ServiciosComponent,
     BoxServicesComponent,
     ProyectosComponent,
     HabilidadesComponent,

@@ -1,23 +1,85 @@
-strong{
-    color: rgb(137, 90, 1);
-}
-.box-principal-services{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
-    gap: 50px;
-    align-content: center;
-    align-items: center;
+.box-principal-services {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 20px;
+  padding: 10px;
+  .lc-porfolio-title-serivicos {
+    display: flex;
     justify-content: center;
-    margin: 10px 20px;
-    padding: 10px;
-    h3{
-        text-decoration: underline;
-        cursor: pointer;
-        color: white;
+    align-items: center;
+    margin-bottom: 60px;
+    img {
+      width: 200px;
+      height: 200px;
     }
-    p{
-        color: white;
-    }
+  }
+  h3 {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
 
+@media (min-width: 600px) {
+  .box-principal-services {
+    &__diseño-web,
+    &__marketing-digital,
+    &__posicionamiento {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    h3 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .box-principal-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    padding: 0;
+    .lc-porfolio-title-serivicos {
+        display: grid;
+        margin: 0;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        place-content: center;
+        img{
+            width: 500px;
+            height: 500px;
+            margin-right: 40px;
+        }
+    }
+    &__diseño-web,
+    &__marketing-digital,
+    &__posicionamiento {
+        display: flex;
+        place-content: center;
+        margin: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+  }
 }
